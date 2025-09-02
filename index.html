@@ -59,16 +59,16 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-white" href="#">Portfolio</a>
+                  <a class="nav-link text-white" href="#myProject">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-white" href="#">Skills</a>
+                  <a class="nav-link text-white" href="#skill">Skills</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-white" href="#">About</a>
+                  <a class="nav-link text-white" href="#aboutMe">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-white" href="#">Contact</a>
+                  <a class="nav-link text-white" href="#contact">Contact</a>
                 </li>
                 <li class="nav-item">
                   <a
@@ -105,9 +105,7 @@
             <a target="_blank" href="https://github.com/JayedHoshen"
               ><i class="fa-brands fa-github"></i
             ></a>
-            <a
-              target="_blank"
-              href="https://www.linkedin.com/in/jayedhoshen/"
+            <a target="_blank" href="https://www.linkedin.com/in/jayedhoshen/"
               ><i class="fa-brands fa-linkedin"></i
             ></a>
             <a target="_blank" href="mailto:jayedkn64@gmail.com"
@@ -125,8 +123,123 @@
     </header>
     <main>
       <!-- portfolio -->
-      <section class="container">
+      <section id="myProject" class="container">
         <h2 class="text-center text-white mt-4 mb-4">My Recent Projects</h2>
+        <div class="portfolio_item">
+          <div class="row">
+            <div class="left col-lg-6 col-sm-12">
+              <div
+                id="carouselExampleIndicators"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="./images/toDo1.png"
+                      class="d-block w-100"
+                      alt="landingPage"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./images/toDo2.png"
+                      class="d-block w-100"
+                      alt="landingPage"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./images/toDo1.png"
+                      class="d-block w-100"
+                      alt="landingPage"
+                    />
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+            <div class="right col-lg-6 col-sm-12">
+              <h4 class="text-danger">Simple To-Do Apps</h4>
+              <p class="port_text">
+                This application provides a clean and user-friendly way to
+                manage tasks by categorizing them into incomplete and completed
+                lists, with options to add, check off, and delete tasks.
+              </p>
+              <ul class="text-white Port_list">
+                <li>
+                  This website shows the interface of a To-Do List Web
+                  Application.
+                </li>
+                <li>
+                  This is my first dynamic website that i published in locally.
+                </li>
+                <li>This website have not any backend / admin part.</li>
+                <li>
+                  Front-end Design and Vanilla JavaScript Used in this Website
+                </li>
+                <li>Not have any Firebase Authentication in this Website</li>
+                <li>
+                  <span class="text-danger">Front-end Technology:</span> HTML,
+                  CSS, JavaScript (ES6)
+                </li>
+              </ul>
+              <div class="port_btn">
+                <a target="_blank" href="https://jayedhoshen.github.io/todo/"
+                  >Live Preview</a
+                >
+                <a target="_blank" href="https://github.com/JayedHoshen/todo"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="portfolio_item">
           <div class="row">
             <div class="left col-lg-6 col-sm-12">
@@ -375,6 +488,7 @@
                 <span>MySQL</span>
                 <span>PL/SQL</span>
                 <span>Python</span>
+                <span>JavaScript</span>
               </li>
               <li>
                 <p class="h3 text-danger mt-3 mb-3">Familiar:</p>
@@ -394,6 +508,8 @@
                 <span>Database Architecture</span>
                 <span>Competitive programming</span>
                 <span>Auto CAD 2D</span>
+                <span>Digital Marketing</span>
+                <span>Land-Survey Instructor</span>
               </li>
               <li>
                 <p class="h3 text-danger mt-3 mb-3">Tools:</p>
@@ -408,7 +524,10 @@
               </li>
             </ul>
           </div>
-          <div class="right mt-4 mb-4 text-info col-lg-6 col-sm-12 text-center">
+          <div
+            id="aboutMe"
+            class="right mt-4 mb-4 text-info col-lg-6 col-sm-12 text-center"
+          >
             <h3 class="h1">My Education</h3>
             <h4 class="text-danger h2 mt-4">Under Graduation</h4>
             <p>
@@ -421,7 +540,7 @@
       </section>
 
       <!-- Contact -->
-      <section class="container text-center contact_part">
+      <section id="contact" class="container text-center contact_part">
         <h2 class="text-white">Contact with Me</h2>
         <form class="contact_form">
           <input
@@ -456,9 +575,7 @@
         <a target="_blank" href="https://github.com/JayedHoshen"
           ><i class="fa-brands fa-github"></i
         ></a>
-        <a
-          target="_blank"
-          href="https://www.linkedin.com/in/jayedhoshen/"
+        <a target="_blank" href="https://www.linkedin.com/in/jayedhoshen/"
           ><i class="fa-brands fa-linkedin"></i
         ></a>
         <a target="_blank" href="mailto:jayedkn64@gmail.com"
